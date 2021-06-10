@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ekz_proj:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ekz_proj</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ekz_proj-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="ekz_proj:war exploded" />
+    </root>
+  </artifact>
+</component>
