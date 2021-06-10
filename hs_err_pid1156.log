@@ -1,0 +1,169 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1048576 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=1156, tid=0x0000000000003e6c
+#
+# JRE version:  (8.0_292-b10) (build )
+# Java VM: OpenJDK 64-Bit Server VM (25.292-b10 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00000221cb420800):  JavaThread "Unknown thread" [_thread_in_vm, id=15980, stack(0x000000620e100000,0x000000620e200000)]
+
+Stack: [0x000000620e100000,0x000000620e200000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x00000221cb420800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=15980, stack(0x000000620e100000,0x000000620e200000)]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+heap address: 0x0000000082400000, size: 2012 MB, Compressed Oops mode: 32-bit
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 3
+Compressed class space size: 1073741824 Address: 0x0000000100000000
+
+Heap:
+ PSYoungGen      total 37888K, used 655K [0x00000000d6180000, 0x00000000d8b80000, 0x0000000100000000)
+  eden space 32768K, 2% used [0x00000000d6180000,0x00000000d6223d80,0x00000000d8180000)
+  from space 5120K, 0% used [0x00000000d8680000,0x00000000d8680000,0x00000000d8b80000)
+  to   space 5120K, 0% used [0x00000000d8180000,0x00000000d8180000,0x00000000d8680000)
+ ParOldGen       total 86016K, used 0K [0x0000000082400000, 0x0000000087800000, 0x00000000d6180000)
+  object space 86016K, 0% used [0x0000000082400000,0x0000000082400000,0x0000000087800000)
+ Metaspace       used 792K, capacity 4480K, committed 4480K, reserved 1056768K
+  class space    used 76K, capacity 384K, committed 384K, reserved 1048576K
+
+Card table byte_map: [0x00000221dc200000,0x00000221dc5f0000] byte_map_base: 0x00000221dbdee000
+
+Marking Bits: (ParMarkBitMap*) 0x000000005526f7f0
+ Begin Bits: [0x00000221dc890000, 0x00000221de800000)
+ End Bits:   [0x00000221de800000, 0x00000221e0770000)
+
+Polling page: 0x00000221cb540000
+
+CodeCache: size=245760Kb used=328Kb max_used=328Kb free=245431Kb
+ bounds [0x00000221cce40000, 0x00000221cd0b0000, 0x00000221dbe40000]
+ total_blobs=57 nmethods=0 adapters=38
+ compilation: enabled
+
+Compilation events (0 events):
+No events
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.061 loading class java/lang/Short
+Event: 0.061 loading class java/lang/Short done
+Event: 0.061 loading class java/lang/Integer
+Event: 0.062 loading class java/lang/Integer done
+Event: 0.062 loading class java/lang/Long
+Event: 0.062 loading class java/lang/Long done
+Event: 0.063 loading class java/lang/NullPointerException
+Event: 0.063 loading class java/lang/NullPointerException done
+Event: 0.063 loading class java/lang/ArithmeticException
+Event: 0.063 loading class java/lang/ArithmeticException done
+
+
+Dynamic libraries:
+0x00007ff6238f0000 - 0x00007ff62392a000 	C:\Users\Anton\.jdks\corretto-1.8.0_292\bin\java.exe
+0x00007ff8cf800000 - 0x00007ff8cf9f0000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ff8cf540000 - 0x00007ff8cf5f2000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ff8cd490000 - 0x00007ff8cd734000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ff8ce2c0000 - 0x00007ff8ce363000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ff8cebc0000 - 0x00007ff8cec5e000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ff8cf720000 - 0x00007ff8cf7b7000 	C:\WINDOWS\System32\sechost.dll
+0x00007ff8cf600000 - 0x00007ff8cf720000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ff8ce440000 - 0x00007ff8ce5d5000 	C:\WINDOWS\System32\USER32.dll
+0x00007ff8cc880000 - 0x00007ff8cc8a1000 	C:\WINDOWS\System32\win32u.dll
+0x00007ff8cd8b0000 - 0x00007ff8cd8d6000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ff8cd2f0000 - 0x00007ff8cd486000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ff8cd7f0000 - 0x00007ff8cd88e000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ff8cc780000 - 0x00007ff8cc87a000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ff8918f0000 - 0x00007ff891b74000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.18362.1016_none_9e7a36bbe461dae4\COMCTL32.dll
+0x00007ff8ce880000 - 0x00007ff8cebb5000 	C:\WINDOWS\System32\combase.dll
+0x00007ff8cd070000 - 0x00007ff8cd0f0000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ff8cd990000 - 0x00007ff8cd9be000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ff8a6d40000 - 0x00007ff8a6e2f000 	C:\Users\Anton\.jdks\corretto-1.8.0_292\jre\bin\msvcr120.dll
+0x00007ff8a6820000 - 0x00007ff8a68c6000 	C:\Users\Anton\.jdks\corretto-1.8.0_292\jre\bin\msvcp120.dll
+0x0000000054a80000 - 0x00000000552ee000 	C:\Users\Anton\.jdks\corretto-1.8.0_292\jre\bin\server\jvm.dll
+0x00007ff8cf530000 - 0x00007ff8cf538000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ff8c72d0000 - 0x00007ff8c72f4000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ff894180000 - 0x00007ff894189000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ff8c43d0000 - 0x00007ff8c43da000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ff8cf4a0000 - 0x00007ff8cf50f000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ff8c71e0000 - 0x00007ff8c720d000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x00007ff8cd0f0000 - 0x00007ff8cd13a000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x00007ff8c7930000 - 0x00007ff8c793f000 	C:\Users\Anton\.jdks\corretto-1.8.0_292\jre\bin\verify.dll
+0x00007ff8c75f0000 - 0x00007ff8c7619000 	C:\Users\Anton\.jdks\corretto-1.8.0_292\jre\bin\java.dll
+0x00007ff8a6b30000 - 0x00007ff8a6b65000 	C:\Users\Anton\.jdks\corretto-1.8.0_292\jre\bin\jdwp.dll
+0x00007ff8c43f0000 - 0x00007ff8c43f8000 	C:\Users\Anton\.jdks\corretto-1.8.0_292\jre\bin\npt.dll
+0x00007ff8bbea0000 - 0x00007ff8bbeca000 	C:\Users\Anton\.jdks\corretto-1.8.0_292\jre\bin\instrument.dll
+0x00007ff8c7910000 - 0x00007ff8c7926000 	C:\Users\Anton\.jdks\corretto-1.8.0_292\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:52218,suspend=y,server=n -javaagent:C:\Users\Anton\AppData\Local\JetBrains\IntelliJIdea2021.1\captureAgent\debugger-agent.jar -Dfile.encoding=UTF-8 
+java_command: com.example.classes.sockets.Client
+java_class_path (initial): C:\Users\Anton\.jdks\corretto-1.8.0_292\jre\lib\charsets.jar;C:\Users\Anton\.jdks\corretto-1.8.0_292\jre\lib\ext\access-bridge-64.jar;C:\Users\Anton\.jdks\corretto-1.8.0_292\jre\lib\ext\cldrdata.jar;C:\Users\Anton\.jdks\corretto-1.8.0_292\jre\lib\ext\dnsns.jar;C:\Users\Anton\.jdks\corretto-1.8.0_292\jre\lib\ext\jaccess.jar;C:\Users\Anton\.jdks\corretto-1.8.0_292\jre\lib\ext\jfxrt.jar;C:\Users\Anton\.jdks\corretto-1.8.0_292\jre\lib\ext\localedata.jar;C:\Users\Anton\.jdks\corretto-1.8.0_292\jre\lib\ext\nashorn.jar;C:\Users\Anton\.jdks\corretto-1.8.0_292\jre\lib\ext\sunec.jar;C:\Users\Anton\.jdks\corretto-1.8.0_292\jre\lib\ext\sunjce_provider.jar;C:\Users\Anton\.jdks\corretto-1.8.0_292\jre\lib\ext\sunmscapi.jar;C:\Users\Anton\.jdks\corretto-1.8.0_292\jre\lib\ext\sunpkcs11.jar;C:\Users\Anton\.jdks\corretto-1.8.0_292\jre\lib\ext\zipfs.jar;C:\Users\Anton\.jdks\corretto-1.8.0_292\jre\lib\jce.jar;C:\Users\Anton\.jdks\corretto-1.8.0_292\jre\lib\jfr.jar;C:\Users\Anton\.jdks\corretto-1.8.0_292\jre\lib\jfxswt.jar;C:\Users\Anton\.jdks\corretto-1.8.0_292\jre\lib\jsse.jar;C:\Users\Anton\.jdks\corretto-1.8.0_292\jre\lib\management-agent.jar;C:\Users\Anton\.jdks\corretto-1.8.0_292\jre\lib\resources.jar;C:\Users\Anton\.jdks\corretto-1.8.0_292\jre\lib\rt.jar;C:\Users\Anton\source\repos\pacei_NV_sovremenueTehnologiyVInternet\экзамен\ekz_proj\target\classes;C:\Users\Anton\.m2\repository\com\microsoft\sqlserver\mssql-jdbc\9.2.1.jre8\mssql-jdbc-9.2.1.jre8.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2021.1.2\lib\idea_rt.jar;C:\Users\Anton\AppData\Local\JetBrains\IntelliJIdea2021.1\captureAgent\debugger-agent.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Users\Anton\.jdks\corretto-1.8.0_282
+PATH=C:\Users\Anton\.jdks\corretto-1.8.0_282;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\150\DTS\Binn\;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;C:\Users\Anton\.jdks\corretto-1.8.0_282\bin;C:\Program Files\Azure Data Studio\bin;C:\Users\Anton\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Anton\.dotnet\tools;C:\Program Files\JetBrains\IntelliJ IDEA 2021.1.2\bin;;C:\Users\Anton\source\repos\pacei_NV_sovremenueTehnologiyVInternet\лабораторные\Lab11(Maven)\apache-maven-3.8.1\bin\;
+USERNAME=Anton
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 142 Stepping 10, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 18362 (10.0.18362.959)
+
+CPU:total 8 (initial active 8) (4 cores per cpu, 2 threads per core) family 6 model 142 stepping 10, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 8240104k(1563652k free), swap 8240104k(5920k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.292-b10) for windows-amd64 JRE (1.8.0_292-b10), built on Apr 14 2021 23:06:53 by "Administrator" with MS VC++ 12.0 (VS2013)
+
+time: Thu Jun 10 15:30:26 2021
+timezone: RTZ 2 (ceia)
+elapsed time: 0.071991 seconds (0d 0h 0m 0s)
+

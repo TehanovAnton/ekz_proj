@@ -19,14 +19,13 @@ public class DatabaseConnection {
     public DatabaseConnection() {
         conn = null;
         try {
+            this.prop = new Properties();
+            this.prop.load(new FileReader("src/main/resources/config.properties"));
+
             Class.forName(prop.getProperty("MS_JDBC_DRIVER")).getDeclaredConstructor().newInstance();
             conn = DriverManager.getConnection(prop.getProperty("MS_DB_URL"), prop.getProperty("MS_USER_NAME"), prop.getProperty("MS_PASSWORD"));
 
             st = conn.createStatement();
-
-            this.prop = new Properties();
-            this.prop.load(new FileReader("src/main/resources/config.properties"));
-
         } catch (InstantiationException e) {
             e.printStackTrace();
         } catch (IllegalAccessException e) {
