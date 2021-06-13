@@ -1,0 +1,58 @@
+<component name="libraryTable">
+  <library name="fscontext">
+    <ANNOTATIONS>
+      <root url="file://$PROJECT_DIR$/../../лабораторные" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../лабораторные/glassfish5/mq/lib/fscontext.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../лабораторные/glassfish5/mq/lib/imq.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../лабораторные/glassfish5/mq/lib/jms.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$PROJECT_DIR$/../../лабораторные/glassfish5/mq/javadoc" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../../лабораторные/Lab11(Maven)/apache-maven-3.8.1/bin/example/.mvn/wrapper" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/Lab11(Maven)/apache-maven-3.8.1/bin/example/example-backend/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/Lab11(Maven)/apache-maven-3.8.1/bin/example/example-backend/src/test/java" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/Lab12_JSTL/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/Lab13(MVC)/javaLab10_jsp/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/Lab14(JMS_MOM)/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/Lab6/javalab6/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/Lab8_1/javalab8/src" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/Lab8_2/javalab8prt2/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/Lab9/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/apache-tomcat-8.5.65/webapps/docs/appdev/sample/src" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/apache-tomcat-8.5.65/webapps/ekz_proj_war/WEB-INF" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/apache-tomcat-8.5.65/webapps/examples/WEB-INF/classes" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/apache-tomcat-8.5.65/webapps/examples/WEB-INF/jsp/applet" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/apache-tomcat-8.5.65/webapps/examples/jsp/plugin/applet" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/glassfish5/mq/examples/applications/mqapplet" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/glassfish5/mq/examples/applications/mqping" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/glassfish5/mq/examples/applications/qbrowser" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/glassfish5/mq/examples/applications/simplechat" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/glassfish5/mq/examples/applications/uclient" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/glassfish5/mq/examples/helloworld/helloworldmessage" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/glassfish5/mq/examples/helloworld/helloworldmessagejndi" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/glassfish5/mq/examples/jaxm" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/glassfish5/mq/examples/jms" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/glassfish5/mq/examples/jms20/asyncsend" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/glassfish5/mq/examples/jms20/asynctopicconsumer" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/glassfish5/mq/examples/jms20/deliverycount" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/glassfish5/mq/examples/jms20/deliverydelay" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/glassfish5/mq/examples/jms20/messagegetbody" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/glassfish5/mq/examples/jms20/messageheader" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/glassfish5/mq/examples/jms20/messageproperties" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/glassfish5/mq/examples/jms20/selector" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/glassfish5/mq/examples/jms20/sharedsub" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/glassfish5/mq/examples/jms20/syncqueue" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/glassfish5/mq/examples/jmx" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/glassfish5/mq/examples/monitoring" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные/lab10(JSP)/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../../лабораторные" />
+    </SOURCES>
+    <jarDirectory url="file://$PROJECT_DIR$/../../лабораторные" recursive="false" />
+    <jarDirectory url="file://$PROJECT_DIR$/../../лабораторные" recursive="false" type="SOURCES" />
+  </library>
+</component>

@@ -3,4 +3,42 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
+    <servlet>
+        <servlet-name>index</servlet-name>
+        <jsp-file>/views/index.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>index</servlet-name>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>error</servlet-name>
+        <jsp-file>/views/error.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>error</servlet-name>
+        <url-pattern>/error</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>welcome1</servlet-name>
+        <jsp-file>/views/welcome1.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>welcome1</servlet-name>
+        <url-pattern>/welcome1</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>KeyValueArrays</servlet-name>
+        <jsp-file>/views/KeyValueArrays.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>KeyValueArrays</servlet-name>
+        <url-pattern>/KeyValueArrays</url-pattern>
+    </servlet-mapping>
+    <jsp-config>
+        <taglib>
+            <taglib-uri>customtag</taglib-uri>
+            <taglib-location>/WEB-INF/customtag_tdl/CustomTagTdl.tld</taglib-location>
+        </taglib>
+    </jsp-config>
 </web-app>

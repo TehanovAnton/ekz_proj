@@ -1,9 +1,8 @@
-import com.example.classes.KeyValue.KVTRepository;
+
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.jupiter.api.Assertions.*;
-
+import static org.junit.Assert.*;
 public class TestKVTRepository {
     KVTRepository rep;
 
@@ -17,13 +16,13 @@ public class TestKVTRepository {
         System.out.println("end");
     }
 
-    @Test(timeout=100)
+    @Test
     public void TestCheckKeyExists() {
         assertTrue(rep.checkKeyExists(1));
     }
 
-    @Test(timeout=100)
+    @Test
     public void TestGetValue() {
-        assertNotEquals("", rep.getValue(1));
+        assertEquals("a", rep.getValue(1));
     }
 }
